@@ -1,0 +1,21 @@
+---
+title: "Untitled"
+author: "Amadou Barry"
+date: "5/10/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## My First Map
+```{r echo=FALSE}
+library(leaflet)
+my_map <- leaflet() %>%
+        addTiles()  %>%
+        addMarkers(lng = -13.704435, lat = 9.516931, popup = "Conakry")
+my_map
+```
+
+
